@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FF"
+    tools:context=".ThreeActivity">
+
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/assets_three_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:src="@drawable/assets_three_datadiri"
+        app:layout_constraintEnd_toEndOf="@+id/img_title"
+        app:layout_constraintStart_toStartOf="@+id/img_title"
+        app:layout_constraintTop_toBottomOf="@+id/img_title" />
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/edt_absen"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/edt_kelas"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/img_conversation"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/assets_three_conversation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:src="@drawable/assets_btn_nextprev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:rotation="180"
+        android:src="@drawable/assets_btn_nextprev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/cupcakes"
+        android:text="nama lengkap"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cupcakes"
+        android:text="no absen"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cupcakes"
+        android:text="kelas"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="textView18,textView20, textView21"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalGap="8dp"
+        app:layout_constraintStart_toStartOf="@id/imageView20"
+        app:layout_constraintBottom_toBottomOf="@id/imageView20"
+        app:layout_constraintTop_toTopOf="@id/imageView20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

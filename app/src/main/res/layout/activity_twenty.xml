@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F0"
+    tools:context=".TwentyActivity">
+
+    <ImageView
+        android:id="@+id/img_score"
+        android:layout_width="225dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/assets_twenty_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        style="@style/TextStyleBelleza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Hallo, Livy!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_score" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        style="@style/TextTitleCupCakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/btn_ulang_evaluasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ulangi Evaluasi"
+        app:layout_constraintEnd_toEndOf="@+id/tv_score"
+        app:layout_constraintStart_toStartOf="@+id/tv_score"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/assets_btn_menu"
+        android:background="@drawable/button_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        style="@style/TextStyleBelleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terimakasih sudah mengerjakan Evaluasi.\nHasil Skor Evaluasi Kamu Adalah:"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

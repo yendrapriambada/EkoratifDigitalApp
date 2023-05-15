@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F0"
+    tools:context=".NineTeenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_evaluasi"
+            android:layout_width="225dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/assets_nineteen_evaluasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_evaluasi"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/arahan_evaluasi"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_evaluasi" />
+
+        <TextView
+            android:id="@+id/tv_soal_1"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/soal_1"
+            android:justificationMode="inter_word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_evaluasi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_evaluasi" />
+
+        <ImageView
+            android:id="@+id/btn_checkbox_benar"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_checkbox_salah"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_1"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_checkbox_salah"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_1"
+            app:layout_constraintStart_toEndOf="@id/btn_checkbox_benar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_1" />
+
+        <ImageView
+            android:id="@+id/checklist_1_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_checkbox_benar"
+            app:layout_constraintEnd_toEndOf="@+id/btn_checkbox_benar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_checkbox_benar"
+            app:layout_constraintTop_toTopOf="@+id/btn_checkbox_benar" />
+
+        <ImageView
+            android:id="@+id/checklist_1_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/btn_checkbox_salah"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_checkbox_salah"
+            app:layout_constraintTop_toTopOf="@+id/btn_checkbox_salah" />
+
+        <TextView
+            android:id="@+id/tv_soal_2"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_1"
+            app:layout_constraintTop_toBottomOf="@+id/btn_checkbox_benar" />
+
+        <ImageView
+            android:id="@+id/btn_benar_2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_2"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_2"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_2" />
+
+        <ImageView
+            android:id="@+id/checklist_2_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_2"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_2"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_2" />
+
+        <ImageView
+            android:id="@+id/checklist_2_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_2"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_2"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_2" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_3"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_2" />
+
+        <ImageView
+            android:id="@+id/btn_benar_3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_3"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_3"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_3" />
+
+        <ImageView
+            android:id="@+id/checklist_3_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_3"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_3"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_3" />
+
+        <ImageView
+            android:id="@+id/checklist_3_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_3"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_3"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_3" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_4"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_3"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_3" />
+
+        <ImageView
+            android:id="@+id/btn_benar_4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_4"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_4"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_4"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_4" />
+
+        <ImageView
+            android:id="@+id/checklist_4_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_4"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_4"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_4" />
+
+        <ImageView
+            android:id="@+id/checklist_4_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_4"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_4"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_4" />
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_5"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_4"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_4" />
+
+        <ImageView
+            android:id="@+id/btn_benar_5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_5"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_5"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_5" />
+
+        <ImageView
+            android:id="@+id/checklist_5_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_5"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_5"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_5" />
+
+        <ImageView
+            android:id="@+id/checklist_5_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_5"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_5"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_5" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_6"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_5"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_5" />
+
+        <ImageView
+            android:id="@+id/btn_benar_6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_6"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_6"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_6"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_6" />
+
+        <ImageView
+            android:id="@+id/checklist_6_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_6"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_6"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_6" />
+
+        <ImageView
+            android:id="@+id/checklist_6_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_6"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_6"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_6" />
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_7"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_6"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_6" />
+
+        <ImageView
+            android:id="@+id/btn_benar_7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_7"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_7"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_7"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_7" />
+
+        <ImageView
+            android:id="@+id/checklist_7_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_7"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_7"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_7" />
+
+        <ImageView
+            android:id="@+id/checklist_7_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_7"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_7"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_7" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_8"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_7"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_7" />
+
+        <ImageView
+            android:id="@+id/btn_benar_8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_8"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_8"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_8"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_8" />
+
+        <ImageView
+            android:id="@+id/checklist_8_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_8"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_8"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_8" />
+
+        <ImageView
+            android:id="@+id/checklist_8_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_8"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_8"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_8" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_9"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_8"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_8" />
+
+        <ImageView
+            android:id="@+id/btn_benar_9"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_9"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_9"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_9"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_9"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_9"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_9"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_9" />
+
+        <ImageView
+            android:id="@+id/checklist_9_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_9"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_9"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_9" />
+
+        <ImageView
+            android:id="@+id/checklist_9_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_9"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_9"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_9" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_soal_10"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/soal_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_9"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_9" />
+
+        <ImageView
+            android:id="@+id/btn_benar_10"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/assets_nineteen_checkbox"
+            app:layout_constraintEnd_toStartOf="@+id/btn_salah_10"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_soal_10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_10"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/btn_salah_10"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/assets_btn_checkbox_salah"
+            app:layout_constraintEnd_toEndOf="@+id/tv_soal_10"
+            app:layout_constraintStart_toEndOf="@id/btn_benar_10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_soal_10" />
+
+        <ImageView
+            android:id="@+id/checklist_10_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_benar_10"
+            app:layout_constraintEnd_toEndOf="@+id/btn_benar_10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_benar_10"
+            app:layout_constraintTop_toTopOf="@+id/btn_benar_10" />
+
+        <ImageView
+            android:id="@+id/checklist_10_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/assets_nineteen_checklist"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_salah_10"
+            app:layout_constraintEnd_toEndOf="@+id/btn_salah_10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_salah_10"
+            app:layout_constraintTop_toTopOf="@+id/btn_salah_10" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_benar_10" />
+
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_menu"
+            android:src="@drawable/assets_btn_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InteractiveModuleProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextStyleBelleza">
+        <item name="android:fontFamily">@font/belleza</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextStyleSingle">
+        <item name="android:fontFamily">@font/single</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextTitleCupCakes">
+        <item name="android:fontFamily">@font/cupcakes</item>
+        <item name="android:layout_marginStart">16sp</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextTitleSomeTimeLater">
+        <item name="android:fontFamily">@font/sometimelater</item>
+        <item name="android:layout_marginStart">16sp</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

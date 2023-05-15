@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D5F0"
+    tools:context=".FiveActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tv_title"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/assets_five_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_cp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+            <ImageView
+                android:id="@+id/img_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_cp"
+                app:layout_constraintStart_toStartOf="@+id/img_cp"
+                app:layout_constraintTop_toTopOf="@+id/img_cp" />
+
+            <TextView
+                android:id="@+id/tv_cp"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/capaian_pembelajaran"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_cp"
+                app:layout_constraintStart_toEndOf="@+id/ic_search1"
+                app:layout_constraintTop_toTopOf="@+id/img_cp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_tp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_cp">
+
+            <ImageView
+                android:id="@+id/img_tp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_tp"
+                app:layout_constraintStart_toStartOf="@+id/img_tp"
+                app:layout_constraintTop_toTopOf="@+id/img_tp" />
+
+            <TextView
+                android:id="@+id/tv_tp"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/tujuan_pembelajaran"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_tp"
+                app:layout_constraintStart_toEndOf="@+id/ic_search2"
+                app:layout_constraintTop_toTopOf="@+id/img_tp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_mke"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tp">
+
+            <ImageView
+                android:id="@+id/img_mke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mke"
+                app:layout_constraintStart_toStartOf="@+id/img_mke"
+                app:layout_constraintTop_toTopOf="@+id/img_mke" />
+
+            <TextView
+                android:id="@+id/tv_mke"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/materi_kegiatan_ekonomi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mke"
+                app:layout_constraintStart_toEndOf="@+id/ic_search3"
+                app:layout_constraintTop_toTopOf="@+id/img_mke" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_mek"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mke">
+
+            <ImageView
+                android:id="@+id/img_mek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mek"
+                app:layout_constraintStart_toStartOf="@+id/img_mek"
+                app:layout_constraintTop_toTopOf="@+id/img_mek" />
+
+            <TextView
+                android:id="@+id/tv_mek"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/materi_ekonomi_kreatif"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mek"
+                app:layout_constraintStart_toEndOf="@+id/ic_search4"
+                app:layout_constraintTop_toTopOf="@+id/img_mek" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_lr"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_mek">
+
+            <ImageView
+                android:id="@+id/img_lr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lr"
+                app:layout_constraintStart_toStartOf="@+id/img_lr"
+                app:layout_constraintTop_toTopOf="@+id/img_lr" />
+
+            <TextView
+                android:id="@+id/tv_lr"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/lembar_refleksi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lr"
+                app:layout_constraintStart_toEndOf="@+id/ic_search5"
+                app:layout_constraintTop_toTopOf="@+id/img_lr" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_eval"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lr">
+
+            <ImageView
+                android:id="@+id/img_eval"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_eval"
+                app:layout_constraintStart_toStartOf="@+id/img_eval"
+                app:layout_constraintTop_toTopOf="@+id/img_eval" />
+
+            <TextView
+                android:id="@+id/tv_eval"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/evaluasi"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_eval"
+                app:layout_constraintStart_toEndOf="@+id/ic_search6"
+                app:layout_constraintTop_toTopOf="@+id/img_eval" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_kunjaw"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_eval">
+
+            <ImageView
+                android:id="@+id/img_kunjaw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_kunjaw"
+                app:layout_constraintStart_toStartOf="@+id/img_kunjaw"
+                app:layout_constraintTop_toTopOf="@+id/img_kunjaw" />
+
+            <TextView
+                android:id="@+id/tv_kunjaw"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/kunci_jawaban"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_kunjaw"
+                app:layout_constraintStart_toEndOf="@+id/ic_search7"
+                app:layout_constraintTop_toTopOf="@+id/img_kunjaw" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_dapus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_kunjaw">
+
+            <ImageView
+                android:id="@+id/img_dapus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_dapus"
+                app:layout_constraintStart_toStartOf="@+id/img_dapus"
+                app:layout_constraintTop_toTopOf="@+id/img_dapus" />
+
+            <TextView
+                android:id="@+id/tv_dapus"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/daftar_pustaka"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_dapus"
+                app:layout_constraintStart_toEndOf="@+id/ic_search8"
+                app:layout_constraintTop_toTopOf="@+id/img_dapus" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/img_ayam"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="-50dp"
+            android:background="@drawable/assets_one_ayam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_prev_green"
+            android:src="@drawable/assets_btn_nextprev_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_dapus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

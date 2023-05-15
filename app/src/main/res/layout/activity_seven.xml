@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FF"
+    tools:context=".SevenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextTitleCupCakes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tujuan_pembelajaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tp"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/content_tp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_one"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/no_1"
+            app:layout_constraintStart_toStartOf="@+id/tv_tp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tp" />
+
+        <TextView
+            android:id="@+id/content_one"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_one"
+            app:layout_constraintTop_toTopOf="@+id/tv_one" />
+
+        <TextView
+            android:id="@+id/tv_two"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_2"
+            app:layout_constraintStart_toStartOf="@+id/tv_one"
+            app:layout_constraintTop_toBottomOf="@+id/content_one" />
+
+        <TextView
+            android:id="@+id/content_two"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_two"
+            app:layout_constraintTop_toTopOf="@+id/tv_two" />
+
+        <TextView
+            android:id="@+id/tv_three"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_3"
+            app:layout_constraintStart_toStartOf="@+id/tv_two"
+            app:layout_constraintTop_toBottomOf="@+id/content_two" />
+
+        <TextView
+            android:id="@+id/content_three"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_three"
+            app:layout_constraintTop_toTopOf="@+id/tv_three" />
+
+        <TextView
+            android:id="@+id/tv_four"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_4"
+            app:layout_constraintStart_toStartOf="@+id/tv_three"
+            app:layout_constraintTop_toBottomOf="@+id/content_three" />
+
+        <TextView
+            android:id="@+id/content_four"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_four"
+            app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+        <TextView
+            android:id="@+id/tv_five"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_5"
+            app:layout_constraintStart_toStartOf="@+id/tv_four"
+            app:layout_constraintTop_toBottomOf="@+id/content_four" />
+
+        <TextView
+            android:id="@+id/content_five"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_five"
+            app:layout_constraintTop_toTopOf="@+id/tv_five" />
+
+        <TextView
+            android:id="@+id/tv_six"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_6"
+            app:layout_constraintStart_toStartOf="@+id/tv_five"
+            app:layout_constraintTop_toBottomOf="@+id/content_five" />
+
+        <TextView
+            android:id="@+id/content_six"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_six"
+            app:layout_constraintTop_toTopOf="@+id/tv_six" />
+
+        <TextView
+            android:id="@+id/tv_seven"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_7"
+            app:layout_constraintStart_toStartOf="@+id/tv_six"
+            app:layout_constraintTop_toBottomOf="@+id/content_six" />
+
+        <TextView
+            android:id="@+id/content_seven"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_seven"
+            app:layout_constraintTop_toTopOf="@+id/tv_seven" />
+
+        <TextView
+            android:id="@+id/tv_eight"
+            style="@style/TextStyleBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_8"
+            app:layout_constraintStart_toStartOf="@+id/tv_seven"
+            app:layout_constraintTop_toBottomOf="@+id/content_seven" />
+
+        <TextView
+            android:id="@+id/content_eight"
+            style="@style/TextStyleBelleza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tujuanpembelajaran_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_eight"
+            app:layout_constraintTop_toTopOf="@+id/tv_eight" />
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/assets_btn_menu"
+            android:background="@drawable/button_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_eight" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
