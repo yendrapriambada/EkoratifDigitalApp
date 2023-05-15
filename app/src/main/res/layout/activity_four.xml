@@ -123,7 +123,6 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="4dp"
-            android:rotation="180"
             android:src="@drawable/assets_btn_nextprev"
             app:layout_constraintBottom_toBottomOf="@+id/content_four"
             app:layout_constraintStart_toEndOf="@+id/content_four"
@@ -157,6 +156,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="4dp"
+            android:rotation="180"
             android:src="@drawable/assets_btn_nextprev"
             app:layout_constraintBottom_toBottomOf="@+id/content_four_2"
             app:layout_constraintStart_toEndOf="@+id/content_four_2"
@@ -303,33 +303,27 @@
             app:layout_constraintStart_toEndOf="@+id/tv_eight"
             app:layout_constraintTop_toTopOf="@+id/tv_eight" />
 
-
-        <TextView
-            android:id="@+id/tv_semangat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/belleza"
-            android:text="@string/semangat"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/content_eight"
-            app:layout_constraintStart_toStartOf="@+id/tv_eight"
-            app:layout_constraintTop_toBottomOf="@+id/content_eight" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="-20dp"
+            android:layout_marginBottom="-10dp"
+            android:src="@drawable/assets_four_atk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/btn_next"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button"
             android:src="@drawable/assets_btn_nextprev"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_semangat" />
+            app:layout_constraintTop_toBottomOf="@+id/content_eight" />
 
         <ImageView
             android:id="@+id/btn_prev"

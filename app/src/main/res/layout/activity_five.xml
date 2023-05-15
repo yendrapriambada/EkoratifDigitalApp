@@ -212,7 +212,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btn_lr"
+            android:id="@+id/btn_sl"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -221,6 +221,100 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_mek">
+
+            <ImageView
+                android:id="@+id/img_sl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search51"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_sl"
+                app:layout_constraintStart_toStartOf="@+id/img_sl"
+                app:layout_constraintTop_toTopOf="@+id/img_sl" />
+
+            <TextView
+                android:id="@+id/tv_sl"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/soal_latihan"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_sl"
+                app:layout_constraintStart_toEndOf="@+id/ic_search51"
+                app:layout_constraintTop_toTopOf="@+id/img_sl" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_lp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sl">
+
+            <ImageView
+                android:id="@+id/img_lp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bg_daftar_isi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic_search61"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/assets_five_icsearch"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lp"
+                app:layout_constraintStart_toStartOf="@+id/img_lp"
+                app:layout_constraintTop_toTopOf="@+id/img_lp" />
+
+            <TextView
+                android:id="@+id/tv_lp"
+                style="@style/TextStyleSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/lembar_proyek"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_lp"
+                app:layout_constraintStart_toEndOf="@+id/ic_search61"
+                app:layout_constraintTop_toTopOf="@+id/img_lp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_lr"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lp">
 
             <ImageView
                 android:id="@+id/img_lr"
