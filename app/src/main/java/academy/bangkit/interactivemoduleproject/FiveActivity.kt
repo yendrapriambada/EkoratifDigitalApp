@@ -44,7 +44,7 @@ class FiveActivity : AppCompatActivity() {
                     startActivity(it)
                 }
             }
-            imgLr.setOnClickListener {
+            imgLp.setOnClickListener {
                 Intent(this@FiveActivity, ProyekWawancara1Activity::class.java).also {
                     startActivity(it)
                 }

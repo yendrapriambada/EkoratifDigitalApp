@@ -15,7 +15,7 @@ class RencanaUsahaActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@RencanaUsahaActivity, CoverProposalActivity::class.java).also {
+                Intent(this@RencanaUsahaActivity, IdeUsahaActivity::class.java).also {
                     startActivity(it)
                 }
             }
