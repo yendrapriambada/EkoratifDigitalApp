@@ -14,7 +14,7 @@ class ThirteenActivity : AppCompatActivity() {
         binding = ActivityThirteenBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnPrev.setOnClickListener{
-            Intent(this@ThirteenActivity, TenActivity::class.java).also {
+            Intent(this@ThirteenActivity, Konsumsi2Activity::class.java).also {
                 startActivity(it)
             }
         }

@@ -12,8 +12,8 @@ class ElevenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityElevenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnPrev.setOnClickListener{
-            Intent(this@ElevenActivity, TenActivity::class.java).also {
+        binding.btnNext.setOnClickListener{
+            Intent(this@ElevenActivity, Produksi2Activity::class.java).also {
                 startActivity(it)
             }
         }

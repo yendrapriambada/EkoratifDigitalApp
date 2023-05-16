@@ -77,4 +77,8 @@
     <string name="kunci_jawaban">Kunci Jawaban</string>
     <string name="soal_latihan">Soal Latihan</string>
     <string name="lembar_proyek">Lembar Proyek</string>
+    <string name="ada_beberapa_macam_kegiatan_ekonomi_yang_dilakukan_dan_sering_kita_temui_di_masyarakat_kegiatan_ekonomi_itu_seperti_produksi_distribusi_dan_juga_konsumsi_untuk_mengetahui_lebih_jelas_kamu_bisa_klik_masing_masing_gambar_dari_jenis_kegiatan_ekonomi_di_bawah_ini">Ada beberapa macam kegiatan ekonomi yang dilakukan dan sering kita temui di masyarakat. Kegiatan ekonomi itu seperti <b>produksi, distribusi, dan juga konsumsi</b>. Untuk mengetahui lebih jelas, kamu bisa klik masing-masing gambar dari jenis kegiatan ekonomi di bawah ini!</string>
+    <string name="sumber_gambar_https_ekonomi_bisnis_com">Sumber gambar :\nhttps://ekonomi.bisnis.com/</string>
+    <string name="sumber_gambar_https_jatengprov_go_id">Sumber gambar :\nhttps://jatengprov.go.id/</string>
+    <string name="sumber_gambar_nhttps_bandung_bisnis_com">Sumber gambar :\nhttps://bandung.bisnis.com/</string>
 </resources>

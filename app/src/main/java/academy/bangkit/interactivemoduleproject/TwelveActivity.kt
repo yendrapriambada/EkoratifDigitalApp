@@ -13,8 +13,8 @@ class TwelveActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTwelveBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnPrev.setOnClickListener{
-            Intent(this@TwelveActivity, TenActivity::class.java).also {
+        binding.btnNext.setOnClickListener{
+            Intent(this@TwelveActivity, Distribusi2Activity::class.java).also {
                 startActivity(it)
             }
         }

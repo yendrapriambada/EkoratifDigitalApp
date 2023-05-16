@@ -36,6 +36,16 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="TextTitleCandaTawa">
+        <item name="android:fontFamily">@font/candatawaregular</item>
+        <item name="android:layout_marginStart">16sp</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="TextTitleSomeTimeLater">
         <item name="android:fontFamily">@font/sometimelater</item>
         <item name="android:layout_marginStart">16sp</item>

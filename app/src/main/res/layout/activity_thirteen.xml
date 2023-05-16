@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCC9CF"
+    android:background="#B6D5F0"
     tools:context=".ThirteenActivity">
 
     <ImageView
@@ -82,6 +82,19 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <TextView
+        android:id="@+id/textView51"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Sumber gambar :\nhttps://regional.kompas.com/"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
         android:id="@+id/textView6"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
@@ -93,6 +106,19 @@
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Sumber gambar :\nhttps://jernih.co/"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <ImageView
         android:id="@+id/btn_prev"
         android:layout_width="80dp"
@@ -101,7 +127,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:rotation="180"
-        android:src="@drawable/assets_btn_nextprev"
+        android:src="@drawable/assets_btn_nextprev_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D5F0"
+    tools:context=".LatihanEkonomiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/assets_latihanekonomi_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_latihanekonomi_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Hal-hal penting mengenai kegiatan ekonomi yang aku dapatkan:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView22"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Produksi adalah"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/edt_produksi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Ketik jawabanmu disini"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            android:gravity="start|top"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Distribusi adalah"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edt_produksi"
+            app:layout_constraintStart_toStartOf="@+id/edt_produksi"
+            app:layout_constraintTop_toBottomOf="@+id/edt_produksi" />
+
+        <EditText
+            android:id="@+id/edt_distribusi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="start|top"
+            android:hint="Ketik jawabanmu disini"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Konsumsi adalah"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edt_produksi"
+            app:layout_constraintStart_toStartOf="@+id/edt_produksi"
+            app:layout_constraintTop_toBottomOf="@+id/edt_distribusi" />
+
+        <EditText
+            android:id="@+id/edt_konsumsi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="start|top"
+            android:hint="Ketik jawabanmu disini"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_latihanekonomi_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+        <TextView
+            android:id="@+id/textView45"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Contoh kegiatan ekonomi yang berada di lingkungan sekitar tempat tinggalku:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toTopOf="@+id/imageView23" />
+
+        <EditText
+            android:id="@+id/edt_contohekonomi"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:gravity="start|top"
+            android:hint="Ketik jawabanmu disini"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView45"
+            app:layout_constraintStart_toStartOf="@+id/textView45"
+            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/button_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

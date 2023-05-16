@@ -48,7 +48,7 @@
         android:layout_marginBottom="-30dp"
         android:background="@drawable/assets_one_tempatsayuran"
         app:layout_constraintBottom_toBottomOf="@+id/img_cp"
-        app:layout_constraintEnd_toEndOf="@+id/img_cp" />" />
+        app:layout_constraintEnd_toEndOf="@+id/img_cp" />
 
     <ImageView
         android:id="@+id/img_ayam"
@@ -66,8 +66,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/assets_btn_menu"
-        android:background="@drawable/button_menu"
+        android:src="@drawable/button_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
