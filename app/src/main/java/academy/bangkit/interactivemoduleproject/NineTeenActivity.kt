@@ -30,7 +30,7 @@ class NineTeenActivity : AppCompatActivity() {
 
         val pref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
 
-        val scoreNow = pref.getInt("score", 0)
+        val scoreNow = pref.getInt("scoreLatihan", 0)
 
         if (scoreNow != 0){
             val intent = Intent(this, TwentyActivity::class.java)
@@ -176,7 +176,7 @@ class NineTeenActivity : AppCompatActivity() {
                 if (six == "benar"){
                     score += 10
                 }
-                if (seven == "salah"){
+                if (seven == "benar"){
                     score += 10
                 }
                 if (eight == "salah"){
@@ -191,7 +191,7 @@ class NineTeenActivity : AppCompatActivity() {
 
 
                 val editor: SharedPreferences.Editor = pref.edit()
-                editor.putInt("score", this.score)
+                editor.putInt("scoreLatihan", this.score)
                 editor.apply()
 
                 val intent = Intent(this, TwentyActivity::class.java)

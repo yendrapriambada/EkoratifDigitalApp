@@ -65,17 +65,17 @@
     <string name="link_dapus_mek_2">Madani, A. (2021). Pengertian Ekonomi Kreatif: Ciri-Ciri, Jenis, dan Manfaatnya Bagi Negara Indonesia. Diakses pada 14 Januari 2023, dari https://www.gramedia.com/literasi/pengertian-ekonomi-kreatif/</string>
     <string name="materi_ekonomi_kreatif">Materi Ekonomi Kreatif</string>
     <string name="title_cover_belakang">PENDIDIKAN GURU SEKOLAH DASAR\nDEPARTEMEN PEDAGOGIK\nFAKULTAS ILMU PENDIDIKAN\nUNIVERSITAS PENDIDIKAN INDONESIA\n2022\n\nKURIKULUM MERDEKA\nPENYUSUN : SOPIATUL PADILA\n2023</string>
-    <string name="arahan_evaluasi">Bentuk evaluasi di bawah ini merupakan evaluasi Benar - Salah yang dapat kamu kerjakan pada buku tulismu, tulis kata benar jika kamu merasa pernyataan yang ada benar dan tulis kata salah jika kamu merasa pernyataan yang ada salah!</string>
+    <string name="arahan_evaluasi">Bentuk evaluasi di bawah ini merupakan evaluasi Benar-Salah, klik "Benar" jika menurutmu pernyataan tersebut dianggap benar dan klik "Salah" jika menurutmu pernyataan tersebut dianggap salah!</string>
     <string name="soal_1">1. Sebuah aktivitas yang dilakukan oleh manusia untuk memenuhi kebutuhan hidupnya disebut dengan Kegiatan Ekonomi.</string>
     <string name="soal_2">2. Produksi adalah kegiatan untuk menghasilkan suatu barang atau jasa. Pelaku dari kegiatan produksi disebut sebagai produsen. </string>
-    <string name="soal_3">3. Contoh dari produksi adalah grosis yang menjual sembako untuk masyarakat.</string>
+    <string name="soal_3">3. Contoh dari produksi adalah grosir yang menjual sembako untuk masyarakat.</string>
     <string name="soal_4">4. Orang yang melakukan distribusi disebut sebagai distributor.</string>
     <string name="soal_5">5. Kegiatan ekonomi yang menghasilkan nilai guna suatu barang atau jasa secara berangsur-angsur disebut dengan konsumsi.</string>
     <string name="soal_6">6. Ekonomi kreatif merupakan bidang perekonomian yang mengutamakan ide gagasan dan kreativitas dalam prosesnya.</string>
-    <string name="soal_7">7. Bidang mode dalam ekonomi kreatif ialah kegiatan dengan berbagai penciptaan, produksi, serta distribusi produk-produk dari para pengrajin.</string>
-    <string name="soal_8">8. Seni Drama tidak termasuk kepada jenis dalam bidang ekonomi kreatif.</string>
-    <string name="soal_9">9. Bidang perfilman, video, dan fotografi dalam ekonomi kreatif meliputi penciptaan dan produksi berbagai program di televisi seperti acara game, kuis, acara ragam, hingga infotainment. </string>
-    <string name="soal_10">10. Bidang desain dalam ekonomi kreatif meliputi segala kegiatan kreatif dalam hal desain, mulai dari grafis, interior, produk, industri, hingga desain untuk pemasaran produk</string>
+    <string name="soal_7">7. Badan yang bertanggung jawab dalam mengelola subsektor ekonomi kreatif adalah Baparekraf.</string>
+    <string name="soal_8">8. Seni pertunjukan tidak termasuk kepada jenis dalam bidang ekonomi kreatif.</string>
+    <string name="soal_9">9. Bidang perfilman, animasi, dan video dalam ekonomi kreatif meliputi penciptaan dan produksi berbagai program di televisi seperti acara game, kuis, acara ragam, hingga infotainment.</string>
+    <string name="soal_10">10. Bidang desain dalam ekonomi kreatif meliputi segala kegiatan kreatif dalam hal desain, mulai dari desain interior, produk, grafis, industri, hingga desain untuk pemasaran produk</string>
     <string name="benar">Benar</string>
     <string name="salah">Salah</string>
     <string name="lembar_refleksi">Lembar Refleksi</string>
@@ -87,4 +87,13 @@
     <string name="sumber_gambar_https_ekonomi_bisnis_com">Sumber gambar :\nhttps://ekonomi.bisnis.com/</string>
     <string name="sumber_gambar_https_jatengprov_go_id">Sumber gambar :\nhttps://jatengprov.go.id/</string>
     <string name="sumber_gambar_nhttps_bandung_bisnis_com">Sumber gambar :\nhttps://bandung.bisnis.com/</string>
+    <string name="setelah_mengetahui_apa_itu_kegiatan_ekonomi_dan_ekonomi_kreatif_sebelum_merencanakan_sebuah_usaha_carilah_hal_hal_yang_menjadi_keinginan_dan_kebutuhan_warga_sekolah_kalian_dapat_mengetahuinya_dengan_melaksanakan_kegiatan_wawancara_buatlah_susunan_pertanyaan_yang_akan_kalian_ajukan_dalam_mewawancara">Setelah mengetahui apa itu kegiatan ekonomi dan ekonomi kreatif, sebelum merencanakan sebuah usaha carilah hal-hal yang menjadi keinginan dan kebutuhan warga sekolah. Kalian dapat mengetahuinya dengan melaksanakan kegiatan wawancara! Buatlah susunan pertanyaan yang akan kalian ajukan dalam mewawancara!</string>
+    <string name="setelah_kalian_melakukan_kegiatan_wawancara_tuliskanlah_hasil_yang_kalian_dapatkan_kemudian_periksalah_dan_diskusikan_bersama_temanmu_apa_saja_peluang_usaha_barang_atau_jasa_yang_mungkin_dapat_dilakukan_di_sekolah">Setelah kalian melakukan kegiatan wawancara, tuliskanlah hasil yang kalian dapatkan! Kemudian, periksalah dan diskusikan bersama temanmu apa saja peluang usaha barang atau jasa yang mungkin dapat dilakukan di sekolah!</string>
+    <string name="apa_jenis_usaha_yang_akan_kalian_buat_atau_kembangkan_n_apakah_itu_barang_atau_jasa">Apa jenis usaha yang akan kalian buat atau kembangkan?\n<i>(Apakah itu barang? atau jasa?)</i></string>
+    <string name="apa_keunikan_dari_produk_ini_n_apa_yang_berbeda_dengan_produk_yang_tersedia_mengapa_orang_perlu_membelinya">Apa keunikan dari produk ini?\n<i>(Apa yang berbeda dengan produk yang tersedia? Mengapa orang perlu membelinya?)</i></string>
+    <string name="siapa_yang_akan_membeli_barang_jasa_yang_kalian_jual_n_i_apakah_orang_dewasa_anak_anak_perempuan_laki_laki_jelaskan_target_konsumen_kalian_sedetail_mungkin_i">Siapa yang akan membeli barang/jasa yang kalian jual?\n<i>(Apakah orang dewasa? anak-anak? perempuan? laki-laki? Jelaskan target konsumen kalian sedetail mungkin.)</i></string>
+    <string name="bagaimana_kalian_akan_menyebarkan_berita_tentang_bisnis_ini_n_apakah_kalian_akan_mengirim_pesan_ke_teman_membuat_dan_menempelkan_poster_iklan_berkunjung_ke_kelas_kelas">Bagaimana kalian akan menyebarkan berita tentang bisnis ini?\n<i>(Apakah kalian akan mengirim pesan ke teman? Membuat dan menempelkan poster iklan? Berkunjung ke kelas-kelas?)</i></string>
+    <string name="apa_nama_produk_kalian_n_mengapa_nama_ini_dipilih">Apa nama produk kalian?\n<i>(Mengapa nama ini dipilih?)</i></string>
+    <string name="berapa_banyak_uang_yang_dibutuhkan_untuk_memulai_bisnis_ini_n_apa_bahan_bahan_yang_kamu_butuhkan">Berapa banyak uang yang dibutuhkan untuk memulai bisnis ini?\n<i>(Apa bahan-bahan yang kamu butuhkan?)</i></string>
+    <string name="di_mana_dan_bagaimana_kalian_mendapatkan_uang_tersebut_n_apakah_kalian_akan_meminjam_orang_tua_menggunakan_uang_tabungan">Di mana dan bagaimana kalian mendapatkan uang tersebut?\n<i>(Apakah kalian akan meminjam orang tua? Menggunakan uang tabungan?)</i></string>
 </resources>

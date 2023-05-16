@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Ulangi Evaluasi"
+        android:text="Ulangi Latihan"
         app:layout_constraintEnd_toEndOf="@+id/tv_score"
         app:layout_constraintStart_toStartOf="@+id/tv_score"
         app:layout_constraintTop_toBottomOf="@+id/tv_score" />
@@ -68,7 +68,7 @@
         style="@style/TextStyleBelleza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terimakasih sudah mengerjakan Evaluasi.\nHasil Skor Evaluasi Kamu Adalah:"
+        android:text="Terimakasih sudah mengerjakan Soal Latihan.\nHasil Skor Soal Latihan Kamu Adalah:"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/tv_nama"
         app:layout_constraintStart_toStartOf="@+id/tv_nama"

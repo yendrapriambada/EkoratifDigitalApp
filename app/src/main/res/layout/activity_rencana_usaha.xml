@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F0"
+    tools:context=".RencanaUsahaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView28"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Rencana Usahaku"
+            android:textColor="#253439"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/TextStyleCardo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pemasaran"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/desc1"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/siapa_yang_akan_membeli_barang_jasa_yang_kalian_jual_n_i_apakah_orang_dewasa_anak_anak_perempuan_laki_laki_jelaskan_target_konsumen_kalian_sedetail_mungkin_i"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <ImageView
+            android:id="@+id/box1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc1"
+            android:background="@drawable/assets_seventeen_box4" />
+
+        <EditText
+            android:id="@+id/edt_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box1"
+            app:layout_constraintEnd_toEndOf="@+id/box1"
+            app:layout_constraintStart_toStartOf="@+id/box1"
+            app:layout_constraintTop_toBottomOf="@+id/desc1" />
+
+        <TextView
+            android:id="@+id/desc2"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Di mana kalian akan menjual barang/jasa ini?"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+        <ImageView
+            android:id="@+id/box2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+        <EditText
+            android:id="@+id/edt_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2"
+            app:layout_constraintEnd_toEndOf="@+id/box2"
+            app:layout_constraintStart_toStartOf="@+id/box2"
+            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+
+        <TextView
+            android:id="@+id/desc3"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/bagaimana_kalian_akan_menyebarkan_berita_tentang_bisnis_ini_n_apakah_kalian_akan_mengirim_pesan_ke_teman_membuat_dan_menempelkan_poster_iklan_berkunjung_ke_kelas_kelas"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+        <ImageView
+            android:id="@+id/box3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+        <EditText
+            android:id="@+id/edt_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box3"
+            app:layout_constraintEnd_toEndOf="@+id/box3"
+            app:layout_constraintStart_toStartOf="@+id/box3"
+            app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+
+
+
+        <TextView
+            android:id="@+id/desc4"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/apa_nama_produk_kalian_n_mengapa_nama_ini_dipilih"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/box3" />
+
+        <ImageView
+            android:id="@+id/box4"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc4" />
+
+        <EditText
+            android:id="@+id/edt_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box4"
+            app:layout_constraintEnd_toEndOf="@+id/box4"
+            app:layout_constraintStart_toStartOf="@+id/box4"
+            app:layout_constraintTop_toBottomOf="@+id/desc4" />
+
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"
+            android:src="@drawable/assets_btn_nextprev"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box4" />
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:rotation="180"
+            android:background="@drawable/button"
+            android:src="@drawable/assets_btn_nextprev"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_next"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next"
+            app:layout_constraintTop_toTopOf="@+id/btn_next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

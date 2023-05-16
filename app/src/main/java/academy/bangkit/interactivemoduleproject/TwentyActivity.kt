@@ -16,7 +16,7 @@ class TwentyActivity : AppCompatActivity() {
 
         val pref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
 
-        val scoreNow = pref.getInt("score", 0)
+        val scoreNow = pref.getInt("scoreLatihan", 0)
         val nama = pref.getString("nama", "Siswa/Siswi")
         binding.tvScore.text = scoreNow.toString().trim()
         binding.tvNama.text = buildString {
@@ -26,10 +26,10 @@ class TwentyActivity : AppCompatActivity() {
 
         binding.btnUlangEvaluasi.setOnClickListener{
             val editor: SharedPreferences.Editor = pref.edit()
-            editor.remove("score");
+            editor.remove("scoreLatihan");
             editor.apply();
 
-            val scoreAfterClear = pref.getInt("score", 0)
+            val scoreAfterClear = pref.getInt("scoreLatihan", 0)
             if (scoreAfterClear == 0){
                 val intent = Intent(this, NineTeenActivity::class.java)
                 startActivity(intent)
@@ -42,7 +42,5 @@ class TwentyActivity : AppCompatActivity() {
                 finish()
             }
         }
-
-
     }
 }

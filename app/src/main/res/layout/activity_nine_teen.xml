@@ -157,9 +157,6 @@
             app:layout_constraintStart_toStartOf="@+id/btn_salah_2"
             app:layout_constraintTop_toTopOf="@+id/btn_salah_2" />
 
-
-
-
         <TextView
             android:id="@+id/tv_soal_3"
             style="@style/TextStyleSingle"

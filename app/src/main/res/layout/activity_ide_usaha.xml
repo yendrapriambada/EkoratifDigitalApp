@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F0"
+    tools:context=".IdeUsahaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView28"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Ide Usahaku"
+            android:textColor="#253439"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/TextStyleCardo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ide Produk"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/desc1"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Jenis bidang ekonomi kreatif apa yang kalian terapkan dalam usaha ini?"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <ImageView
+            android:id="@+id/box1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc1"
+            android:background="@drawable/assets_seventeen_box4" />
+
+        <EditText
+            android:id="@+id/edt_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box1"
+            app:layout_constraintEnd_toEndOf="@+id/box1"
+            app:layout_constraintStart_toStartOf="@+id/box1"
+            app:layout_constraintTop_toBottomOf="@+id/desc1" />
+
+        <TextView
+            android:id="@+id/desc2"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/apa_jenis_usaha_yang_akan_kalian_buat_atau_kembangkan_n_apakah_itu_barang_atau_jasa"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+        <ImageView
+            android:id="@+id/box2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+        <EditText
+            android:id="@+id/edt_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box2"
+            app:layout_constraintEnd_toEndOf="@+id/box2"
+            app:layout_constraintStart_toStartOf="@+id/box2"
+            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+
+        <TextView
+            android:id="@+id/desc3"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/apa_keunikan_dari_produk_ini_n_apa_yang_berbeda_dengan_produk_yang_tersedia_mengapa_orang_perlu_membelinya"
+            android:textColor="#253439"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+        <ImageView
+            android:id="@+id/box3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+        <EditText
+            android:id="@+id/edt_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:gravity="top|start"
+            android:hint="Tuliskan jawabanmu disini!"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textColorHint="#737373"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/box3"
+            app:layout_constraintEnd_toEndOf="@+id/box3"
+            app:layout_constraintStart_toStartOf="@+id/box3"
+            app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"
+            android:src="@drawable/assets_btn_nextprev"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box3" />
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:rotation="180"
+            android:background="@drawable/button"
+            android:src="@drawable/assets_btn_nextprev"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_next"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next"
+            app:layout_constraintTop_toTopOf="@+id/btn_next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

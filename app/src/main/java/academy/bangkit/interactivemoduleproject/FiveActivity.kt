@@ -39,8 +39,13 @@ class FiveActivity : AppCompatActivity() {
                     startActivity(it)
                 }
             }
+            imgSl.setOnClickListener {
+                Intent(this@FiveActivity, NineTeenActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
             imgLr.setOnClickListener {
-                Intent(this@FiveActivity, SevenTeenActivity::class.java).also {
+                Intent(this@FiveActivity, ProyekWawancara1Activity::class.java).also {
                     startActivity(it)
                 }
             }
