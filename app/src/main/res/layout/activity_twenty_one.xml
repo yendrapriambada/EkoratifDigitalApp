@@ -22,11 +22,26 @@
         style="@style/TextStyleSingle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:text="@string/list_kunjaw"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/img_kunjaw"
+        app:layout_constraintEnd_toStartOf="@+id/tv_kunjaw_evaluasi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_kunjaw" />
+
+    <TextView
+        android:id="@+id/tv_kunjaw_evaluasi"
+        style="@style/TextStyleSingle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/list_kunjaw_evaluasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_kunjaw"
         app:layout_constraintTop_toBottomOf="@+id/img_kunjaw" />
 
     <TextView
@@ -40,7 +55,7 @@
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_kunjaw"
+        app:layout_constraintEnd_toEndOf="@+id/tv_kunjaw_evaluasi"
         app:layout_constraintStart_toStartOf="@+id/tv_kunjaw"
         app:layout_constraintTop_toBottomOf="@+id/tv_kunjaw" />
 
@@ -51,9 +66,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/assets_btn_menu"
         android:background="@drawable/button_menu"
+        android:src="@drawable/assets_btn_menu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,13 +52,19 @@
     <string name="conv_nine_guru_1">Setelah berdiskusi dengan teman sebangkumu apakah kini kamu mengetahui apa itu kegiatan ekonomi?</string>
     <string name="nine_siswa_one">Saya sudah mengetahuinya Bu, akan tetapi Saya masih sedikit bingung, apa itu kegiatan ekonomi?</string>
     <string name="nine_guru_two">Sekarang coba kamu perhatikan penjelasan berikut ini!</string>
-    <string name="list_kunjaw">1. BENAR\n2. BENAR\n3. SALAH\n4. BENAR\n5. SALAH\n6. BENAR\n7. SALAH\n8. SALAH\n9. SALAH\n10. BENAR</string>
+    <string name="list_kunjaw">Kunci Jawaban Latihan Soal:\n1. BENAR\n2. BENAR\n3. SALAH\n4. BENAR\n5. SALAH\n6. BENAR\n7. BENAR\n8. SALAH\n9. SALAH\n10. BENAR</string>
+    <string name="list_kunjaw_evaluasi">Kunci Jawaban Evaluasi Akhir:\n1. C\n2. A\n3. B\n4. C\n5. D\n6. C\n7. ESSAY\n8. ESSAY</string>
     <string name="orang_yang_berhasil_adalah_mereka_yang_bersungguh_sungguh">\"orang yang berhasil adalah mereka yang bersungguh-sungguh\"</string>
     <string name="daftar_pustaka">Daftar Pustaka</string>
     <string name="materi_kegiatan_ekonomi">Materi Kegiatan Ekonomi</string>
-    <string name="link_dapus_1">https://ditsmp.kemdikbud.go.id/kegiatan-ekonomi-produksi-distribusi-dan-konsumsi/</string>
+    <string name="link_dapus_1">Hernawan, I. (2021). Manajemen Sumber Daya Memanfaatkan Sumber Daya. Diakses pada 30 April 2023, dari https://lmsspada.kemdikbud.go.id/mod/forum/discuss.php?d=8150</string>
+    <string name="link_dapus_2">Nugroho. (2022). Tips Menjadi Konsumen yang Baik. Diakses pada 30 April 2023, dari https://www.kompasiana.com/nugroho_sbm/622b8586bb448661c5779a03/tips-menjadi-konsumen-yang-baik</string>
+    <string name="link_dapus_3">Pengelola Web Direktorat SMP. (2022). Kegiatan Ekonomi: Produksi, Distribusi, dan Konsumsi. Diakses pada 14 Januari 2023, dari https://ditsmp.kemdikbud.go.id/kegiatan-ekonomi-produksi-distribusi-dan-konsumsi/</string>
+    <string name="link_dapus_4">Tim GTK Dikdas. (2021). Modul Belajar Mandiri Bidang Studi Pendidikan Guru Sekolah Dasar - IPS. Jakarta : Direktorat GTK Pendidikan Dasar Kementerian Pendidikan dan Kebudayaan</string>
+    <string name="link_dapus_mek_1">Baparekraf Republik Indonesia. (2023).. Subsektor Ekonomi Kreatif. Diakses pada 14 Januari 2023, dari https://kemenparekraf.go.id/layanan/Subsektor-Ekonomi-Kreatif</string>
+    <string name="link_dapus_mek_2">Madani, A. (2021). Pengertian Ekonomi Kreatif: Ciri-Ciri, Jenis, dan Manfaatnya Bagi Negara Indonesia. Diakses pada 14 Januari 2023, dari https://www.gramedia.com/literasi/pengertian-ekonomi-kreatif/</string>
     <string name="materi_ekonomi_kreatif">Materi Ekonomi Kreatif</string>
-    <string name="title_cover_belakang">PENDIDIKAN GURU SEKOLAH DASAR\nDEPARTEMEN PEDAGOGIK\nFAKULTAS ILMU PENDIDIKAN\nUNIVERSITAS PENDIDIKAN INDONESIA\n2022</string>
+    <string name="title_cover_belakang">PENDIDIKAN GURU SEKOLAH DASAR\nDEPARTEMEN PEDAGOGIK\nFAKULTAS ILMU PENDIDIKAN\nUNIVERSITAS PENDIDIKAN INDONESIA\n2022\n\nKURIKULUM MERDEKA\nPENYUSUN : SOPIATUL PADILA\n2023</string>
     <string name="arahan_evaluasi">Bentuk evaluasi di bawah ini merupakan evaluasi Benar - Salah yang dapat kamu kerjakan pada buku tulismu, tulis kata benar jika kamu merasa pernyataan yang ada benar dan tulis kata salah jika kamu merasa pernyataan yang ada salah!</string>
     <string name="soal_1">1. Sebuah aktivitas yang dilakukan oleh manusia untuk memenuhi kebutuhan hidupnya disebut dengan Kegiatan Ekonomi.</string>
     <string name="soal_2">2. Produksi adalah kegiatan untuk menghasilkan suatu barang atau jasa. Pelaku dari kegiatan produksi disebut sebagai produsen. </string>
