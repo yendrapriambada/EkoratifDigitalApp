@@ -71,7 +71,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/sometimelater"
+        android:fontFamily="@font/singel_bold"
         android:text="Jika sudah menuliskannya silahkan untuk mempresentasikannya di depan guru dan teman-temanmu!"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
