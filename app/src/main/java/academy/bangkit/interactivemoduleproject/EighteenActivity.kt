@@ -35,5 +35,14 @@ class EighteenActivity : AppCompatActivity() {
                 finish()
             }
         }
+
+        binding.btnPrev.setOnClickListener {
+            editor.putString("refleksi321", binding.edtRefleksi321.text.toString().trim())
+            editor.apply()
+            Intent(this, SevenTeenActivity::class.java).also {
+                startActivity(it)
+                finish()
+            }
+        }
     }
 }

@@ -228,19 +228,15 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    >
 
                     <EditText
                         style="@style/StyleTable"
                         android:layout_span="4"
                         android:gravity="center"
                         android:text="Total Modal" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
 
                     <EditText style="@style/StyleTable" />
                 </TableRow>

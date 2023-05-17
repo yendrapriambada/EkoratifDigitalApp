@@ -96,4 +96,8 @@
     <string name="apa_nama_produk_kalian_n_mengapa_nama_ini_dipilih">Apa nama produk kalian?\n<i>(Mengapa nama ini dipilih?)</i></string>
     <string name="berapa_banyak_uang_yang_dibutuhkan_untuk_memulai_bisnis_ini_n_apa_bahan_bahan_yang_kamu_butuhkan">Berapa banyak uang yang dibutuhkan untuk memulai bisnis ini?\n<i>(Apa bahan-bahan yang kamu butuhkan?)</i></string>
     <string name="di_mana_dan_bagaimana_kalian_mendapatkan_uang_tersebut_n_apakah_kalian_akan_meminjam_orang_tua_menggunakan_uang_tabungan">Di mana dan bagaimana kalian mendapatkan uang tersebut?\n<i>(Apakah kalian akan meminjam orang tua? Menggunakan uang tabungan?)</i></string>
+    <string name="berapa_harga_barang_dan_jasa">Berapa harga barang dan jasa yang kalian tetapkan?\n<i>(Bagaimana harga produk kalian jika dibandingkan dengan produk lain yang serupa? Pastikan harga yang kalian tetapkan lebih dari modal per produk)</i></string>
+    <string name="berapa_keuntungan_yang_kalian_dapatkan">Berapa keuntungan yang kalian dapatkan?\n<i>(harga per barang = modal : jumlah produk yang dapat dibuat) ( harga per jasa = modal : jumlah jam kerja)</i></string>
+    <string name="apa_yang_akan_kalian_lakukan_dengan_keuntungan">Apa yang akan kalian lakukan dengan keuntungan tersebut?\n<i>(Apakah kalian akan menggunakannya untuk melanjutkan bisnis ini? Ditabung untuk keperluan sekolah? Disumbangkan? Jelaskan alasan kalian.)</i></string>
+    <string name="setelah_kamu_membaca_cerita_bazar_ceria_buatlah_rencana_pelaksanaan_usahamu_pada_tabel_di_bawah_ini">Setelah kamu membaca cerita "Bazar Ceria" buatlah rencana pelaksanaan usahamu pada tabel di bawah ini!</string>
 </resources>

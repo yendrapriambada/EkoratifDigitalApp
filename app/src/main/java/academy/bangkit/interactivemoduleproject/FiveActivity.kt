@@ -49,6 +49,11 @@ class FiveActivity : AppCompatActivity() {
                     startActivity(it)
                 }
             }
+            imgLr.setOnClickListener {
+                Intent(this@FiveActivity, RefleksiProyekActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
             imgEval.setOnClickListener {
                 Intent(this@FiveActivity, NineTeenActivity::class.java).also {
                     startActivity(it)
