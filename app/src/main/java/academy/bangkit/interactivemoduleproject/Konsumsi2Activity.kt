@@ -13,15 +13,15 @@ class Konsumsi2Activity : AppCompatActivity() {
         binding = ActivityKonsumsi2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnNext.setOnClickListener {
-            Intent(this, LatihanEkonomiActivity::class.java).also {
+        binding.btnPrev.setOnClickListener {
+            Intent(this, ThirteenActivity::class.java).also {
                 startActivity(it)
                 finish()
             }
         }
 
-        binding.btnPrev.setOnClickListener {
-            Intent(this, ThirteenActivity::class.java).also {
+        binding.btnNext.setOnClickListener {
+            Intent(this, TenActivity::class.java).also {
                 startActivity(it)
                 finish()
             }

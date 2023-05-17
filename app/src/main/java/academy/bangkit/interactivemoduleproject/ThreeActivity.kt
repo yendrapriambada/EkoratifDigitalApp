@@ -49,7 +49,7 @@ class ThreeActivity : AppCompatActivity() {
         }
 
         binding.btnPrev.setOnClickListener {
-            Intent(this, TwoActivity::class.java).also {
+            Intent(this, MainActivity::class.java).also {
                 startActivity(it)
                 finish()
             }

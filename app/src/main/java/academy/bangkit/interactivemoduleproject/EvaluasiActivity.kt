@@ -178,6 +178,7 @@ class EvaluasiActivity : AppCompatActivity() {
             binding.edtNilaiessay1.isEnabled = true
             binding.edtNilaiessay2.isEnabled = true
             btnSubmit.isClickable = true
+            tvEvaluasi.text = getString(R.string.instruksi_essay)
 
             soalPertanyaan.text = getString(R.string.questions_essay_1)
             soalPertanyaan2.text = getString(R.string.questions_essay_2)

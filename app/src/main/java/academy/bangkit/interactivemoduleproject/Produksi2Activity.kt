@@ -13,15 +13,16 @@ class Produksi2Activity : AppCompatActivity() {
         binding = ActivityProduksi2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnNext.setOnClickListener {
-            Intent(this, TwelveActivity::class.java).also {
+
+        binding.btnPrev.setOnClickListener {
+            Intent(this, ElevenActivity::class.java).also {
                 startActivity(it)
                 finish()
             }
         }
 
-        binding.btnPrev.setOnClickListener {
-            Intent(this, ElevenActivity::class.java).also {
+        binding.btnNext.setOnClickListener {
+            Intent(this, TenActivity::class.java).also {
                 startActivity(it)
                 finish()
             }

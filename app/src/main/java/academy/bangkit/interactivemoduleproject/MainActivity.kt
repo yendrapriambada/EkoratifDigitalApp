@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnNext.setOnClickListener{
-            Intent(this@MainActivity, TwoActivity::class.java).also {
+            Intent(this@MainActivity, ThreeActivity::class.java).also {
                 startActivity(it)
             }
         }

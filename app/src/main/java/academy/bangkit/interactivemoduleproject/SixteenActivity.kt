@@ -1,10 +1,9 @@
 package academy.bangkit.interactivemoduleproject
 
-import academy.bangkit.interactivemoduleproject.databinding.ActivityFourteenBinding
 import academy.bangkit.interactivemoduleproject.databinding.ActivitySixteenBinding
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class SixteenActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySixteenBinding

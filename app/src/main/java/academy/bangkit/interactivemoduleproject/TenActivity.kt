@@ -36,7 +36,7 @@ class TenActivity : AppCompatActivity() {
                 }
             }
             btnNext.setOnClickListener {
-                Intent(this@TenActivity, FourteenActivity::class.java).also {
+                Intent(this@TenActivity, LatihanEkonomiActivity::class.java).also {
                     startActivity(it)
                 }
             }
