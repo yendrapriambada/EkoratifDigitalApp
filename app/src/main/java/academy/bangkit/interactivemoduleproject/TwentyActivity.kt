@@ -4,6 +4,7 @@ import academy.bangkit.interactivemoduleproject.databinding.ActivityTwentyBindin
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 class TwentyActivity : AppCompatActivity() {
@@ -47,16 +48,12 @@ class TwentyActivity : AppCompatActivity() {
             editor.putInt(key, -1)    // delete score by key
             editor.apply()
 
-            val scoreAfterClear = pref.getInt(key, 0)
-            if (scoreAfterClear == 0) {
-                if (key == "scoreEvaluasi") {
-                    val intent = Intent(this, EvaluasiActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    val intent = Intent(this, NineTeenActivity::class.java)
-                    startActivity(intent)
-                }
-
+            if (key == "scoreEvaluasi") {
+                val intent = Intent(this, EvaluasiActivity::class.java)
+                startActivity(intent)
+            } else {
+                val intent = Intent(this, NineTeenActivity::class.java)
+                startActivity(intent)
             }
         }
 
