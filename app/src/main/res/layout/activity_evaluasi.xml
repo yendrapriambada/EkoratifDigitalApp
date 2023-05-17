@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F0"
+    tools:context=".EvaluasiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_evaluasi"
+            android:layout_width="225dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/assets_eval_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_evaluasi"
+            style="@style/TextStyleSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Kerjakanlah evaluasi di bawah ini! Pilihlah jawaban yang menurutmu paling tepat!"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_evaluasi" />
+
+        <TextView
+            android:id="@+id/soal_pertanyaan"
+            style="@style/TextStyleSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            android:textSize="18sp"
+            android:justificationMode="inter_word"
+            android:text="Bagian ini diisi oleh soal pertanyaan. Silahkan isi melalui String.xml!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_evaluasi"
+            tools:alpha="1" />
+
+        <Button
+            android:id="@+id/btn_opsi_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+            android:backgroundTint="#93AFC9"
+            android:text="Pilihan jawaban opsi A. Ini adalah template testing jawaban opsi A."
+            android:textAllCaps="false"
+            app:cornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+            app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
+            app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan"
+            tools:alpha="0" />
+
+        <Button
+            android:id="@+id/btn_opsi_b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:text="opsiB"
+            android:backgroundTint="#93AFC9"
+            android:textAllCaps="false"
+            app:cornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_opsi_a"
+            app:layout_constraintStart_toStartOf="@+id/btn_opsi_a"
+            app:layout_constraintTop_toBottomOf="@+id/btn_opsi_a"
+            tools:alpha="0" />
+
+        <Button
+            android:id="@+id/btn_opsi_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:text="opsiC"
+            android:textAllCaps="false"
+            app:cornerRadius="6dp"
+            android:backgroundTint="#93AFC9"
+            app:layout_constraintEnd_toEndOf="@+id/btn_opsi_b"
+            app:layout_constraintStart_toStartOf="@+id/btn_opsi_b"
+            app:layout_constraintTop_toBottomOf="@+id/btn_opsi_b"
+            tools:alpha="0
+" />
+
+        <Button
+            android:id="@+id/btn_opsi_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:text="opsiD"
+            android:textAllCaps="false"
+            app:cornerRadius="6dp"
+            android:backgroundTint="#93AFC9"
+            app:layout_constraintEnd_toEndOf="@+id/btn_opsi_c"
+            app:layout_constraintStart_toStartOf="@+id/btn_opsi_c"
+            app:layout_constraintTop_toBottomOf="@+id/btn_opsi_c"
+            tools:alpha="0" />
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edt_essay_1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/assets_seventeen_box4"
+            android:hint="Tulis jawabanmu disini!"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="20dp"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+            app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
+            app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan"
+            android:alpha="0"
+            tools:alpha="1"/>
+
+        <EditText
+            android:id="@+id/edt_nilaiessay_1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:alpha="0"
+            android:background="@drawable/assets_seventeen_box4"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Skor"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_essay_1"
+            app:layout_constraintEnd_toEndOf="@+id/edt_essay_1"
+            tools:alpha="1" />
+
+        <TextView
+            android:id="@+id/soal_pertanyaan_2"
+            style="@style/TextStyleSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            android:justificationMode="inter_word"
+            android:text="Bagian ini diisi oleh soal pertanyaan. Silahkan isi melalui String.xml!"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_essay_1"
+            tools:alpha="1" />
+
+        <EditText
+            android:id="@+id/edt_essay_2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+            android:background="@drawable/assets_seventeen_box4"
+            android:enabled="false"
+            android:hint="Tulis jawabanmu disini!"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+            app:layout_constraintStart_toStartOf="@+id/soal_pertanyaan"
+            app:layout_constraintTop_toBottomOf="@+id/soal_pertanyaan_2"
+            tools:alpha="1" />
+
+        <EditText
+            android:id="@+id/edt_nilaiessay_2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:alpha="0"
+            android:background="@drawable/assets_seventeen_box4"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Skor"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_essay_2"
+            app:layout_constraintEnd_toEndOf="@+id/soal_pertanyaan"
+            tools:alpha="1" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="@+id/edt_essay_2"
+            app:layout_constraintStart_toStartOf="@+id/edt_essay_2"
+            app:layout_constraintTop_toBottomOf="@+id/edt_essay_2"
+            tools:alpha="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

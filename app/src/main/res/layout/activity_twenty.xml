@@ -31,15 +31,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_score" />
 
+
     <TextView
         android:id="@+id/tv_score"
         style="@style/TextTitleCupCakes"
+        android:alpha="1"
+        android:textSize="42sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="100"
-        app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintEnd_toEndOf="@+id/desc_latihan"
+        app:layout_constraintStart_toStartOf="@+id/desc_latihan"
+        app:layout_constraintTop_toBottomOf="@+id/desc_latihan" />
 
     <Button
         android:id="@+id/btn_ulang_evaluasi"
@@ -47,9 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Ulangi Latihan"
-        app:layout_constraintEnd_toEndOf="@+id/tv_score"
-        app:layout_constraintStart_toStartOf="@+id/tv_score"
-        app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_score2"
+        app:layout_constraintStart_toStartOf="@+id/tv_score2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score2" />
 
     <ImageView
         android:id="@+id/btn_menu"
@@ -64,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/desc_latihan"
         style="@style/TextStyleBelleza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,5 +77,102 @@
         app:layout_constraintStart_toStartOf="@+id/tv_nama"
         app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
 
+    <TextView
+        android:id="@+id/desc_eval"
+        style="@style/TextStyleBelleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terimakasih sudah mengerjakan Evaluasi Akhir.\nHasil Skor Evaluasi Kamu Adalah:"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        android:alpha="0"/>
+
+    <TextView
+        android:id="@+id/tv_pg"
+        style="@style/TextStyleBelleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:text="Skor PG"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/desc_eval"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/desc_eval"
+        app:layout_constraintTop_toBottomOf="@+id/desc_eval" />
+
+    <TextView
+        android:id="@+id/tv_essay"
+        style="@style/TextStyleBelleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:text="Skor Essay"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/desc_eval"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/desc_eval"
+        app:layout_constraintTop_toBottomOf="@+id/desc_eval" />
+
+    <TextView
+        android:id="@+id/tv_skor_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:fontFamily="@font/cupcakes"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pg"
+        app:layout_constraintStart_toStartOf="@+id/tv_pg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pg" />
+
+    <TextView
+        android:id="@+id/tv_skor_essay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:fontFamily="@font/cupcakes"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_essay"
+        app:layout_constraintStart_toStartOf="@+id/tv_essay"
+        app:layout_constraintTop_toBottomOf="@+id/tv_essay" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        style="@style/TextStyleBelleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:text="Nilai"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/desc_latihan"
+        app:layout_constraintStart_toStartOf="@+id/desc_latihan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skor_pg" />
+
+    <TextView
+        android:id="@+id/tv_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="@font/cupcakes"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/tv_total"
+        app:layout_constraintStart_toStartOf="@+id/tv_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

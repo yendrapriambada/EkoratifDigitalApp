@@ -40,9 +40,9 @@ class FiveActivity : AppCompatActivity() {
                 }
             }
             imgSl.setOnClickListener {
-                Intent(this@FiveActivity, NineTeenActivity::class.java).also {
-                    startActivity(it)
-                }
+                val intent = Intent(this@FiveActivity, NineTeenActivity::class.java)
+                intent.putExtra("from", "scoreLatihan")
+                startActivity(intent)
             }
             imgLp.setOnClickListener {
                 Intent(this@FiveActivity, ProyekWawancara1Activity::class.java).also {
@@ -55,9 +55,9 @@ class FiveActivity : AppCompatActivity() {
                 }
             }
             imgEval.setOnClickListener {
-                Intent(this@FiveActivity, NineTeenActivity::class.java).also {
-                    startActivity(it)
-                }
+                val intent = Intent(this@FiveActivity, TwentyActivity::class.java)
+                intent.putExtra("from", "scoreEvaluasi")
+                startActivity(intent)
             }
             imgKunjaw.setOnClickListener {
                 Intent(this@FiveActivity, TwentyOneActivity::class.java).also {

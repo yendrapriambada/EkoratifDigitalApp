@@ -195,7 +195,9 @@ class NineTeenActivity : AppCompatActivity() {
                 editor.apply()
 
                 val intent = Intent(this, TwentyActivity::class.java)
+                intent.putExtra("from", "scoreLatihan")
                 startActivity(intent)
+                finish()
             }
         }
         binding.btnMenu.setOnClickListener {

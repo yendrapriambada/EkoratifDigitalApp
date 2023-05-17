@@ -16,23 +16,47 @@ class TwentyActivity : AppCompatActivity() {
 
         val pref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
 
-        val scoreNow = pref.getInt("scoreLatihan", 0)
-        val nama = pref.getString("nama", "Siswa/Siswi")
-        binding.tvScore.text = scoreNow.toString().trim()
-        binding.tvNama.text = buildString {
-        append("Halo, ")
-        append(nama.toString().trim())
-    }
+        val key = intent.getStringExtra("from")
 
-        binding.btnUlangEvaluasi.setOnClickListener{
+        if (key == "scoreEvaluasi") {
+            showLayoutScoreEvaluasi()
+            val scoreNow = pref.getInt(key, 0)
+            binding.apply {
+                val skorPG = pref.getInt("scorePG", 0)
+                val skorEssay = pref.getInt("scoreEssay", 0)
+
+                tvSkorPg.text = skorPG.toString()
+                tvSkorEssay.text = skorEssay.toString()
+
+                tvScore2.text = scoreNow.toString().trim()
+            }
+        } else {
+            val scoreNow = pref.getInt(key, 0)
+            binding.tvScore.text = scoreNow.toString().trim()
+        }
+
+
+        val nama = pref.getString("nama", "Siswa/Siswi")
+        binding.tvNama.text = buildString {
+            append("Halo, ")
+            append(nama.toString().trim())
+        }
+
+        binding.btnUlangEvaluasi.setOnClickListener {
             val editor: SharedPreferences.Editor = pref.edit()
-            editor.remove("scoreLatihan");
+            editor.remove(key);
             editor.apply();
 
-            val scoreAfterClear = pref.getInt("scoreLatihan", 0)
-            if (scoreAfterClear == 0){
-                val intent = Intent(this, NineTeenActivity::class.java)
-                startActivity(intent)
+            val scoreAfterClear = pref.getInt(key, 0)
+            if (scoreAfterClear == 0) {
+                if (key == "scoreEvaluasi") {
+                    val intent = Intent(this, EvaluasiActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    val intent = Intent(this, NineTeenActivity::class.java)
+                    startActivity(intent)
+                }
+
             }
         }
 
@@ -41,6 +65,22 @@ class TwentyActivity : AppCompatActivity() {
                 startActivity(it)
                 finish()
             }
+        }
+    }
+
+    private fun showLayoutScoreEvaluasi() {
+        binding.apply {
+            descEval.alpha = 1F
+            tvPg.alpha = 1F
+            tvEssay.alpha = 1F
+            tvSkorPg.alpha = 1F
+            tvSkorEssay.alpha = 1F
+            tvTotal.alpha = 1F
+            tvScore2.alpha = 1F
+
+
+            descLatihan.alpha = 0F
+            tvScore.alpha = 0F
         }
     }
 }

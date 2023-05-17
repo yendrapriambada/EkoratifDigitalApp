@@ -24,6 +24,9 @@
         android:theme="@style/Theme.InteractiveModuleProject"
         tools:targetApi="31">
         <activity
+            android:name=".EvaluasiActivity"
+            android:exported="false" />
+        <activity
             android:name=".RefleksiProyekActivity"
             android:exported="false" />
         <activity

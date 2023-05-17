@@ -100,4 +100,63 @@
     <string name="berapa_keuntungan_yang_kalian_dapatkan">Berapa keuntungan yang kalian dapatkan?\n<i>(harga per barang = modal : jumlah produk yang dapat dibuat) ( harga per jasa = modal : jumlah jam kerja)</i></string>
     <string name="apa_yang_akan_kalian_lakukan_dengan_keuntungan">Apa yang akan kalian lakukan dengan keuntungan tersebut?\n<i>(Apakah kalian akan menggunakannya untuk melanjutkan bisnis ini? Ditabung untuk keperluan sekolah? Disumbangkan? Jelaskan alasan kalian.)</i></string>
     <string name="setelah_kamu_membaca_cerita_bazar_ceria_buatlah_rencana_pelaksanaan_usahamu_pada_tabel_di_bawah_ini">Setelah kamu membaca cerita "Bazar Ceria" buatlah rencana pelaksanaan usahamu pada tabel di bawah ini!</string>
+
+
+    <string-array name="questions">
+        <item>Sebagai makhluk sosial, manusia memerlukan bantuan dari orang lain untuk menjalankan kegiatan ekonomi. Di bawah ini yang disebut dengan kegiatan ekonomi adalah ....</item>
+        <item>Setiap pagi paman pergi ke sawah, di sawah paman menanam padi yang hasil panennya akan diberikan kepada pabrik untuk diolah menjadi beras. Hal yang dilakukan paman adalah kegiatan ....</item>
+        <item>Di pasar ada banyak sekali penjual, baik itu penjual beras, penjual sayuran, ataupun penjual kebutuhan pokok manusia sehari-hari. Kegiatan yang dilakukan oleh penjual di pasar disebut sebagai kegiatan ....</item>
+        <item>Haikal sekarang sedang menjaga toko karena Ayahnya kini sedang pergi ke pasar, toko Haikal menjual berbagai macam sembako yang sering didatangi oleh masyarakat sekitar, pada kegiatan ekonomi Haikal disebut sebagai ....</item>
+        <item>Pada masa yang sudah berkembang, proses perekonomian tentu perlu berlandaskan pada gagasan serta ide kreatif dalam menjalankannya. Hal ini sesuai dengan konsep kegiatan ekonomi yang dinamakan ....</item>
+        <item>Dalam industri ekonomi kreatif ada sebuah kegiatan yang melakukan penciptaan, produksi, serta distribusi produk-produk dari para pengrajin, yang mana produk-produk yang dipasarkan tersebut tentu memiliki nilai estetika yang tinggi dan disebut sebagai bidang kriya. Di bawah ini yang bukan termasuk contoh hasil bidang kriya adalah .... </item>
+    </string-array>
+
+
+    <string-array name="optionA">
+        <item>Aktivitas yang dilakukan manusia untuk sekedar bersenang-senang</item>
+        <item>Produksi</item>
+        <item>Produksi</item>
+        <item>Produsen</item>
+        <item>Kegiatan Ekonomi</item>
+        <item>Perhiasan yang terbuat dari manik-manik</item>
+    </string-array>
+
+    <string-array name="optionB">
+        <item>Aktivitas yang dilakukan manusia karena menjadi sebuah tren masa kini</item>
+        <item>Distribusi</item>
+        <item>Distribusi</item>
+        <item>Pedagang</item>
+        <item>Produksi Kreatif</item>
+        <item>Vas guci yang terbuat dari gerabah tanah liat</item>
+    </string-array>
+
+    <string-array name="optionC">
+        <item>Aktivitas yang dilakukan manusia untuk memenuhi kebutuhan hidupnya</item>
+        <item>Distributor</item>
+        <item>Konsumsi</item>
+        <item>Distributor</item>
+        <item>Ide kreatif</item>
+        <item>Poster edukasi masyarakat</item>
+    </string-array>
+
+    <string-array name="optionD">
+        <item>Aktivitas yang dilakukan manusia untuk memenuhi keinginannya saja</item>
+        <item>Konsumsi</item>
+        <item>Konsumen</item>
+        <item>Konsumen</item>
+        <item>Ekonomi Kreatif</item>
+        <item>Kursi yang terbuat dari bambu rotan</item>
+    </string-array>
+
+    <string-array name="jawaban">
+        <item>c</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="questions_essay_1">Apa saja yang perlu kita siapkan dan pertimbangkan dalam merencanakan sebuah usaha di sekolah? Jelaskan! </string>
+    <string name="questions_essay_2">Ketika kita merencanakan sebuah usaha bersama teman kelompok, mengapa kita perlu untuk berbagi tugas bersama anggota kelompok kita dalam mempersiapkan sebuah usaha? Jelaskanlah!</string>
 </resources>
