@@ -30,12 +30,13 @@ class NineTeenActivity : AppCompatActivity() {
 
         val pref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
 
-        val scoreNow = pref.getInt("scoreLatihan", 0)
+        val scoreNow = pref.getInt("scoreLatihan", -1)
 
-        if (scoreNow != 0){
+        if (scoreNow != -1){
             val intent = Intent(this, TwentyActivity::class.java)
-            intent.putExtra("dataScore", scoreNow)
+            intent.putExtra("from", "scoreLatihan")
             startActivity(intent)
+            finish()
         }
         binding.apply {
             btnCheckboxBenar.setOnClickListener {

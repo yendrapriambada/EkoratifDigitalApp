@@ -44,8 +44,8 @@ class TwentyActivity : AppCompatActivity() {
 
         binding.btnUlangEvaluasi.setOnClickListener {
             val editor: SharedPreferences.Editor = pref.edit()
-            editor.remove(key);
-            editor.apply();
+            editor.putInt(key, -1)    // delete score by key
+            editor.apply()
 
             val scoreAfterClear = pref.getInt(key, 0)
             if (scoreAfterClear == 0) {
@@ -70,6 +70,7 @@ class TwentyActivity : AppCompatActivity() {
 
     private fun showLayoutScoreEvaluasi() {
         binding.apply {
+            imgScore2.alpha = 1F
             descEval.alpha = 1F
             tvPg.alpha = 1F
             tvEssay.alpha = 1F

@@ -35,9 +35,9 @@ class EvaluasiActivity : AppCompatActivity() {
 
         pref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
 
-        val scoreNow = pref.getInt("scoreEvaluasi", 0)
+        val scoreNow = pref.getInt("scoreEvaluasi", -1)
 
-        if (scoreNow != 0) {
+        if (scoreNow != -1) {
             val intent = Intent(this@EvaluasiActivity, TwentyActivity::class.java)
             intent.putExtra("from", "scoreEvaluasi")
             startActivity(intent)
