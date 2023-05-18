@@ -13,8 +13,18 @@ class CoverProposalActivity : AppCompatActivity() {
         binding = ActivityCoverProposalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val dataIdentitasKel = sharedPref.getString("identitasKel", "default").toString()
+        if (dataIdentitasKel != "default")
+            binding.edtIdentitas.setText(dataIdentitasKel)
+
         binding.apply{
             btnPrev.setOnClickListener {
+                editor.putString("identitasKel", binding.edtIdentitas.text.toString().trim())
+                editor.apply()
+
                 Intent(this@CoverProposalActivity, ProyekWawancara2Activity::class.java).also {
                     startActivity(it)
                 }

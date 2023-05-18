@@ -14,7 +14,17 @@ class ProyekWawancara1Activity : AppCompatActivity() {
         binding = ActivityProyekWawancara1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val dataQWawancara = sharedPref.getString("qWawancara", "default").toString()
+        if (dataQWawancara != "default")
+            binding.edtPertanyaanwawancara.setText(dataQWawancara)
+
         binding.btnNext.setOnClickListener {
+            editor.putString("qWawancara", binding.edtPertanyaanwawancara.text.toString().trim())
+            editor.apply()
+
             Intent(this, ProyekWawancara2Activity::class.java).also {
                 startActivity(it)
                 finish()

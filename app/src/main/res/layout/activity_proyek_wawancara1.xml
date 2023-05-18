@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <EditText
-        android:id="@+id/edt_refleksi321"
+        android:id="@+id/edt_pertanyaanwawancara"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"

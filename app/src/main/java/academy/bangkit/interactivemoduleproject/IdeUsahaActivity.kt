@@ -13,6 +13,17 @@ class IdeUsahaActivity : AppCompatActivity() {
         binding = ActivityIdeUsahaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val dataIdeProduk = sharedPref.getString("ideProduk", "default").toString()
+        val dataJenisUsaha = sharedPref.getString("jenisUsaha", "default").toString()
+        val dataUnikProduk = sharedPref.getString("unikProduk", "default").toString()
+
+        if (dataIdeProduk != "default") binding.edt1.setText(dataIdeProduk)
+        if (dataJenisUsaha != "default") binding.edt2.setText(dataJenisUsaha)
+        if (dataUnikProduk != "default") binding.edt3.setText(dataUnikProduk)
+
         binding.apply{
             btnPrev.setOnClickListener {
                 Intent(this@IdeUsahaActivity, CoverProposalActivity::class.java).also {
@@ -20,6 +31,11 @@ class IdeUsahaActivity : AppCompatActivity() {
                 }
             }
             btnNext.setOnClickListener {
+                editor.putString("ideProduk", binding.edt1.text.toString().trim())
+                editor.putString("jenisUsaha", binding.edt2.text.toString().trim())
+                editor.putString("unikProduk", binding.edt3.text.toString().trim())
+                editor.apply()
+
                 Intent(this@IdeUsahaActivity, RencanaUsahaActivity::class.java).also {
                     startActivity(it)
                 }

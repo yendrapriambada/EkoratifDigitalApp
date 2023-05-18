@@ -19,8 +19,8 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="0dp"
-        android:layout_height="340dp"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
@@ -29,11 +29,78 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
         app:srcCompat="@drawable/assets_sixteen_mindmap" />
 
+    <EditText
+        android:id="@+id/edt_mindmap1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/edt_mindmap2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/edt_mindmap3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="66dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/edt_mindmap4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="206dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/edt_mindmap5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="212dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <EditText
+        android:id="@+id/edt_mindmap6"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="264dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="320dp"
         android:layout_height="120dp"
-        android:layout_marginTop="-25dp"
+        android:layout_marginTop="-15dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/imageView16"
         app:layout_constraintTop_toBottomOf="@+id/imageView16"
         app:srcCompat="@drawable/aseets_fifteen_bgtext" />
