@@ -22,9 +22,6 @@ class ProyekWawancara2Activity : AppCompatActivity() {
 
         binding.apply{
             btnPrev.setOnClickListener {
-                editor.putString("aWawancara", binding.edtAnalisisWawancara.text.toString().trim())
-                editor.apply()
-
                 Intent(this@ProyekWawancara2Activity, ProyekWawancara1Activity::class.java).also {
                     startActivity(it)
                     finish()
@@ -32,6 +29,9 @@ class ProyekWawancara2Activity : AppCompatActivity() {
             }
 
             btnNext.setOnClickListener {
+                editor.putString("aWawancara", binding.edtAnalisisWawancara.text.toString().trim())
+                editor.apply()
+
                 Intent(this@ProyekWawancara2Activity, CoverProposalActivity::class.java).also {
                     startActivity(it)
                     finish()

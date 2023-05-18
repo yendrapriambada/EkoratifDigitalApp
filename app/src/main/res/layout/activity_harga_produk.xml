@@ -95,7 +95,7 @@
         <ImageView
             android:id="@+id/box2"
             android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_height="180dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/assets_seventeen_box4"
@@ -110,7 +110,7 @@
             android:layout_margin="10dp"
             android:backgroundTint="#000000"
             android:gravity="top|start"
-            android:hint="Keuntungan = harga jual per produk - modal per produk"
+            android:hint="Tuliskan jawabanmu disini!"
             android:inputType="textMultiLine"
             android:lines="8"
             android:scrollbars="vertical"
@@ -120,8 +120,22 @@
             app:layout_constraintBottom_toBottomOf="@+id/box2"
             app:layout_constraintEnd_toEndOf="@+id/box2"
             app:layout_constraintStart_toStartOf="@+id/box2"
-            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+            app:layout_constraintTop_toBottomOf="@+id/keuntungan_desc" />
 
+        <TextView
+            android:id="@+id/keuntungan_desc"
+            style="@style/TextStyleCardo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Keuntungan = harga jual per produk - modal per produk"
+            android:textColor="#253439"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/box2"
+            app:layout_constraintStart_toStartOf="@+id/box2"
+            app:layout_constraintTop_toTopOf="@+id/box2" />
 
         <TextView
             android:id="@+id/desc3"

@@ -22,14 +22,14 @@ class CoverProposalActivity : AppCompatActivity() {
 
         binding.apply{
             btnPrev.setOnClickListener {
-                editor.putString("identitasKel", binding.edtIdentitas.text.toString().trim())
-                editor.apply()
-
                 Intent(this@CoverProposalActivity, ProyekWawancara2Activity::class.java).also {
                     startActivity(it)
                 }
             }
             btnNext.setOnClickListener {
+                editor.putString("identitasKel", binding.edtIdentitas.text.toString().trim())
+                editor.apply()
+
                 Intent(this@CoverProposalActivity, IdeUsahaActivity::class.java).also {
                     startActivity(it)
                 }

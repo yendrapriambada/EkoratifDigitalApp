@@ -39,6 +39,7 @@
             android:id="@+id/tableLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:paddingBottom="16dp"
             android:scrollbars="horizontal"
@@ -48,199 +49,281 @@
 
             <HorizontalScrollView
                 android:id="@+id/horizontalView"
-                android:layout_height="wrap_content"
-                android:scrollbars="horizontal|vertical"
-                android:layout_width="wrap_content"
-                android:layout_marginTop="5dip">
-                <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="@+id/desc1"
-                app:layout_constraintStart_toStartOf="@+id/desc1"
-                app:layout_constraintTop_toBottomOf="@+id/desc1">
+                android:layout_marginEnd="16dip"
+                android:scrollbars="horizontal|vertical">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp"
-                        android:text="No"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="130dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp"
-                        android:text="Nama Barang"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp"
-                        android:text="Jumlah"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="80dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp"
-                        android:text="Harga"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp"
-                        android:text="Jumlah Harga"
-                        android:textStyle="bold" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        style="@style/StyleTable"
-                        android:gravity="center"
-                        android:text="1" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-
-                <!-- Repeat the TableRow with appropriate data for the remaining rows -->
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        style="@style/StyleTable"
-                        android:gravity="center"
-                        android:text="2" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        style="@style/StyleTable"
-                        android:gravity="center"
-                        android:text="3" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_height="70dp"
-                        android:background="@drawable/border_table"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="4" />
-
-                    <EditText
-                        android:layout_height="70dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp" />
-
-                    <EditText
-                        android:layout_height="70dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp" />
-
-                    <EditText
-                        android:layout_height="70dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp" />
-
-                    <EditText
-                        android:layout_height="70dp"
-                        android:background="@drawable/border_table"
-                        android:padding="5dp" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        style="@style/StyleTable"
-                        android:gravity="center"
-                        android:text="5" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        style="@style/StyleTable"
-                        android:gravity="center"
-                        android:text="6" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-
-                <TableRow
+                <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    >
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/desc1"
+                    app:layout_constraintStart_toStartOf="@+id/desc1"
+                    app:layout_constraintTop_toBottomOf="@+id/desc1">
 
-                    <EditText
-                        style="@style/StyleTable"
-                        android:layout_span="4"
-                        android:gravity="center"
-                        android:text="Total Modal" />
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                    <EditText style="@style/StyleTable" />
-                </TableRow>
-            </TableLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:text="No"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:text="Nama Barang"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:text="Jumlah"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:text="Harga"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:text="Jumlah Harga"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="5dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:gravity="center"
+                            android:text="1" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_1"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_1"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_1"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <!-- Repeat the TableRow with appropriate data for the remaining rows -->
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:gravity="center"
+                            android:text="2" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_2"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_2"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_2"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_2"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:gravity="center"
+                            android:text="3" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_3"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_3"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_3"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_3"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="70dp"
+                            android:background="@drawable/border_table"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="4" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_4"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_4"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_4"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_4"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:gravity="center"
+                            android:text="5" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_5"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_5"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_5"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_5"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:gravity="center"
+                            android:text="6" />
+
+                        <EditText
+                            android:id="@+id/edt_namabarang_6"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_jumlah_6"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <EditText
+                            android:id="@+id/edt_harga_6"
+                            android:inputType="number"
+                            style="@style/StyleTable" />
+
+                        <TextView
+                            android:id="@+id/tv_jumlahharga_6"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            style="@style/StyleTable"
+                            android:layout_span="4"
+                            android:gravity="center"
+                            android:text="Total Modal" />
+
+                        <TextView
+                            android:id="@+id/tv_total_modal"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            style="@style/StyleTable" />
+                    </TableRow>
+                </TableLayout>
 
             </HorizontalScrollView>
         </ScrollView>

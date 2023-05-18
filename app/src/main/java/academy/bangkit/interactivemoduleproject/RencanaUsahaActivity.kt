@@ -24,7 +24,7 @@ class RencanaUsahaActivity : AppCompatActivity() {
         if (dataPembeli != "default") binding.edt1.setText(dataPembeli)
         if (dataTempat != "default") binding.edt2.setText(dataTempat)
         if (dataIklan != "default") binding.edt3.setText(dataIklan)
-        if (dataNama != "default") binding.edt3.setText(dataNama)
+        if (dataNama != "default") binding.edt4.setText(dataNama)
 
         binding.apply {
             btnPrev.setOnClickListener {
@@ -36,7 +36,7 @@ class RencanaUsahaActivity : AppCompatActivity() {
                 editor.putString("pembeliUsaha", binding.edt1.text.toString().trim())
                 editor.putString("tempatUsaha", binding.edt2.text.toString().trim())
                 editor.putString("iklanUsaha", binding.edt3.text.toString().trim())
-                editor.putString("namaProduk", binding.edt3.text.toString().trim())
+                editor.putString("namaProduk", binding.edt4.text.toString().trim())
                 editor.apply()
 
                 Intent(this@RencanaUsahaActivity, AnggaranDanaActivity::class.java).also {

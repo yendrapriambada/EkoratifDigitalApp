@@ -60,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
+                android:layout_marginEnd="8dip"
                 android:scrollbars="horizontal|vertical">
 
                 <TableLayout
@@ -112,6 +113,9 @@
                             android:text="Anggota yang Bertugas"
                             android:textStyle="bold" />
 
+                        <TextView
+                            android:padding="5dp"/>
+
 
                     </TableRow>
 
@@ -124,13 +128,17 @@
                             android:gravity="center"
                             android:text="1" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan1"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal1"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota1"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <!-- Repeat the TableRow with appropriate data for the remaining rows -->
@@ -144,13 +152,17 @@
                             android:gravity="center"
                             android:text="2" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan2"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal2"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota2"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -162,13 +174,17 @@
                             android:gravity="center"
                             android:text="3" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan3"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal3"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota3"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -180,13 +196,17 @@
                             android:gravity="center"
                             android:text="4" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan4"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal4"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota4"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -198,13 +218,17 @@
                             android:gravity="center"
                             android:text="5" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan5"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal5"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota5"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -216,13 +240,17 @@
                             android:gravity="center"
                             android:text="6" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan6"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal6"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota6"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -234,13 +262,17 @@
                             android:gravity="center"
                             android:text="7" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan7"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal7"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota7"
+                            style="@style/StyleTable" />
                     </TableRow>
 
                     <TableRow
@@ -252,13 +284,17 @@
                             android:gravity="center"
                             android:text="8" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_kegiatan8"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_tanggal8"
+                            style="@style/StyleTable" />
 
-                        <EditText style="@style/StyleTable" />
-
-                        <EditText style="@style/StyleTable" />
+                        <EditText
+                            android:id="@+id/edt_anggota8"
+                            style="@style/StyleTable" />
                     </TableRow>
                 </TableLayout>
 
