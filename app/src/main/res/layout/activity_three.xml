@@ -76,10 +76,10 @@
 
     <ImageView
         android:id="@+id/img_conversation"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="-7dp"
+        android:layout_width="325dp"
+        android:layout_height="452dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="-35dp"
         android:src="@drawable/assets_three_conversation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
